@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh's Webcam!</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <h1>Welcome to Josh's Home Cam!</h1>
+        <p align=center class="p1">This page is for Josh's Secure Monitor. Please click following link to access video streaming.</p>
+    <center>
+        <!--
+         <applet code=com.charliemouse.cambozola.Viewer
+             archive=cambozola.jar width="352" height="288" style="border-width:1; border-color:gray; border-style:solid;"> <param name=url value="http://10.0.10.101:8081"> </applet>
+        <p>Webcam Link
+        <a href="#" onclick="javascript:window.location.port=8081">Webcam</a>.<br/>
+        <a href="http://10.0.10.101:8081">Web</a>.<br/>
+        -->
+        <!--
+        <video width="352" height="288" controls="controls"">
+                <source src="http://10.0.10.101:8081" loop="loop" autoplay="autoplay"/>	
+                Your browser does not support the vide tag
+        </video>
+        -->
+        
+        <iframe src="http://59.127.42.219:8081" width="352" height="300" scrolling="no" frameborder="0">
+        </iframe>
+        
+        <iframe src="http://59.127.42.219:8082" width="352" height="300" scrolling="no" frameborder="0">
+        </iframe>
+       
+        <p class="p2">Download Cam1
+            <button onclick='window.location="ftp://10.0.10.136/cam1/image"' class="cam1">Images</button>
+            <button onclick='window.location="ftp://10.0.10.136/cam1/video"' class="cam1">Videos</button>
+        </p>
+        
+        <p class="p2">Download Cam2
+            <button onclick='window.location="ftp://10.0.10.136/cam2/image"' class="cam2">Images</button>
+            <button onclick='window.location="ftp://10.0.10.136/cam2/video"' class="cam2">Videos</button>
+        </p>
+
+        <p class="p3">~ Thank you for using ~</p>
+    </body>
+</html>
